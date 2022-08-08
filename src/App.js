@@ -79,15 +79,19 @@ class App extends React.Component {
     return (
       <div>
 
-      <h1>MY LIST</h1>
+      <h1 align="center">MY LIST</h1>
         
         <div>
         <div
           style={{
+            border: '10px solid gray',
             padding: 30,
             textAlign: "left",
-            maxWidth: 500,
-            margin: "auto"
+            maxWidth: 400,
+            margin: "auto",
+            height: 450,
+            backgroundColor: 'yellow',
+            color: 'blue'
           }}
         >
           Add an Item...
@@ -101,6 +105,7 @@ class App extends React.Component {
           <button
             onClick={() => this.addItem()}
             disabled={!this.state.newItem.length}
+            style={{backgroundColor:'cyan', color:'white'}}
           >
             <i> + </i>
           </button>
